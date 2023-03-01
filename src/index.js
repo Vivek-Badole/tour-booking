@@ -13,8 +13,10 @@ import bookingRoute from "./routes/booking.js";
 
 const app = express();
 
+app.enable('trust proxy');
+
 const corsOptions = {
-    origin:true,
+    origin:'tour-booking-backend.netlify.app',
     credentials:true
 }
 

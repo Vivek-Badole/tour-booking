@@ -2,9 +2,19 @@ import User from "../models/user.models.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
+
 //user registration
 export const register = async (req, res) => {
   try {
+    
+    const email = req.body.email;
+    const user = await User.findOne({ email }).lean().exec();
+    //if user doesn't exist
+    if (user) {
+      return res
+        .status(404)
+        .json({ success: false, message: "Email already exist!"});
+    }
     //hashing password
     const salt = bcrypt.genSaltSync(10);
     const hash = bcrypt.hashSync(req.body.password, salt);
@@ -60,7 +70,9 @@ export const login = async (req, res) => {
       process.env.JWT_SECRET_KEY,
       { expiresIn: "15d" }
     );
+    // res.header('Authorization', 'Bearer '+ token);
 
+    
     //set token in the browser cookies and send the response to the client
     return res
       .cookie("accessToken", token, {
