@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.69ea52fa.css",
-    "main.js": "/static/js/main.e1637ae3.js",
-    "static/media/nigeria_falls.mp4": "/static/media/nigeria_falls.1c88678638bf230971a8.mp4",
+    "main.js": "/static/js/main.a5881bf8.js",
     "static/media/remixicon.svg?t=1590207869815": "/static/media/remixicon.9cedd2150922ead84869.svg",
     "static/media/sliderImg6.jpg": "/static/media/sliderImg6.a353f901a7ebddcf4d54.jpg",
     "static/media/sliderImg3.webp": "/static/media/sliderImg3.b9451c3a75a11cbb0ffc.webp",
@@ -35,10 +34,10 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.69ea52fa.css.map": "/static/css/main.69ea52fa.css.map",
-    "main.e1637ae3.js.map": "/static/js/main.e1637ae3.js.map"
+    "main.a5881bf8.js.map": "/static/js/main.a5881bf8.js.map"
   },
   "entrypoints": [
     "static/css/main.69ea52fa.css",
-    "static/js/main.e1637ae3.js"
+    "static/js/main.a5881bf8.js"
   ]
 }
