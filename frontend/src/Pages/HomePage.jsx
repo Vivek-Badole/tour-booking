@@ -12,7 +12,7 @@ import sliderImg6 from "../assets/images/sliderImg6.jpg";
 
 import namaste_logo from "../assets/images/namaste_logo.png";
 import travel_satisfy from "../assets/images/travel_satisfy.jpg";
-import nigeria_falls from "../assets/images/nigeria_falls.mp4"
+
 
 
 
@@ -118,7 +118,8 @@ const HomePage = () => {
           <div>
             <div  className="miniSlider">
             {/* <video src={nigeria_falls} alt="" controls/> */}
-            <video src={nigeria_falls} alt="" controls autoPlay muted />
+            <video src="
+https://user-images.githubusercontent.com/97503546/222445046-ecf8057e-871d-4e42-8071-bb0ca3ecbbe6.mp4" alt="" controls autoPlay muted  />
             </div>
           </div>
         </Slider>
